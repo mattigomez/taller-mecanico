@@ -229,7 +229,8 @@ section div h2 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-
+a:hover{color: orange;
+font-size: 1.6rem;}
 
 /* MEDIA QUERIES MOBILE */
 @media only screen and (max-width: 768px) {
