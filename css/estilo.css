@@ -64,10 +64,12 @@ ul {
     align-items: center;
 }
 
-a {
-    text-decoration: none;
+li a {
     color: white;
 }
+
+a{text-decoration: none;
+color: orange;}
 
 main {
     grid-area: main;
@@ -140,7 +142,8 @@ nav,
 .redes h3 {
     margin-bottom: 1rem;
 }
-
+.redes a{width:100%;
+padding-right: 1.5rem;}
 h1 {
     font-size: 4rem;
     font-weight: 1000;
@@ -229,8 +232,7 @@ section div h2 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-a:hover{color: orange;
-font-size: 1.6rem;}
+a:hover{color: orange}
 
 /* MEDIA QUERIES MOBILE */
 @media only screen and (max-width: 768px) {
@@ -351,7 +353,8 @@ font-size: 1.6rem;}
     }
 
     .ubicacion iframe {
-        width: 100%;
+        width: 80%;
+       padding: 0 5rem;
     }
 
     .contacto h2 {
