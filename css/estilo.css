@@ -43,6 +43,10 @@ nav {
     grid-area: nav;
 }
 
+p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 footer {
     grid-area: footer;
     display: flex;
@@ -68,8 +72,10 @@ li a {
     color: white;
 }
 
-a{text-decoration: none;
-color: orange;}
+a {
+    text-decoration: none;
+    color: orange;
+}
 
 main {
     grid-area: main;
@@ -120,8 +126,6 @@ nav,
     margin-bottom: 2rem;
     background-color: wheat;
     border-radius: 2rem;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
 }
 
 .piePag {
@@ -142,16 +146,25 @@ nav,
 .redes h3 {
     margin-bottom: 1rem;
 }
-.redes a{width:100%;
-padding-right: 1.5rem;}
+
+.redes a {
+    width: 100%;
+    padding-right: 1.5rem;
+}
+
 h1 {
     font-size: 4rem;
     font-weight: 1000;
 }
 
+h2 {
+    font-size: 2.5rem;
+    font-weight: 800
+}
+
 h3 {
     font-size: 2rem;
-    font-weight: 800;
+    font-weight: 600;
     line-height: 3rem;
 }
 
@@ -232,7 +245,116 @@ section div h2 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-a:hover{color: orange}
+a:hover {
+    color: orange
+}
+
+.mainServicios {
+    grid-area: main;
+    display: grid;
+    justify-items: center;
+    background-color: orange;
+    grid-template-columns: repeat(4, .25fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+        "titulo titulo titulo titulo "
+        "subtitulo subtitulo subtitulo subtitulo"
+        "imgTd imgAl imgFren imgElast"
+    ;
+}
+
+.titulo {
+    grid-area: titulo;
+    margin: 2rem;
+}
+
+.subtitulo {
+    grid-area: subtitulo;
+    padding: 5rem 0;
+    margin: 1rem;
+}
+
+.imgTd {
+    grid-area: imgTd;
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.imgAl {
+    grid-area: imgAl;
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.imgFren {
+    grid-area: imgFren;
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.imgElast {
+    grid-area: imgElast;
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.mainNosotros {
+    grid-area: main;
+    display: grid;
+    justify-items: center;
+    background-color: orange;
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+        "tituloNos"
+        "subtituloNos"
+        "imgTaller"
+    ;
+}
+
+.tituloNos {
+    grid-area: tituloNos;
+    margin: 2rem;
+}
+
+.subtituloNos {
+    grid-area: subtituloNos;
+    margin: 4rem;
+}
+
+.imgTaller {
+    grid-area: imgTaller;
+    margin: 4rem;
+}
+
+.mainClientes {
+    grid-area: main;
+    display: grid;
+    justify-items: center;
+    background-color: orange;
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+        "tituloClientes"
+        "subtituloClientes"
+        "imgClientes"
+    ;
+}
+
+.tituloClientes {
+    grid-area: tituloClientes;
+    margin: 2rem;
+}
+
+.subtituloClientes {
+    grid-area: subtituloClientes;
+    margin: 4rem;
+}
+
+.imgClientes {
+    grid-area: imgClientes;
+    margin: 4rem;
+}
 
 /* MEDIA QUERIES MOBILE */
 @media only screen and (max-width: 768px) {
@@ -281,6 +403,7 @@ a:hover{color: orange}
     h1 {
         font-size: 3rem;
     }
+
 
     .cards {
         width: auto;
@@ -354,13 +477,27 @@ a:hover{color: orange}
 
     .ubicacion iframe {
         width: 80%;
-       padding: 0 5rem;
+        padding: 0 5rem;
     }
 
     .contacto h2 {
         width: auto;
     }
+
+     /* media queries servicios */
+
+    
+     .mainServicios {
+        grid-area: main;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imgClientes img{width: 100%;}
+
+
 }
+
 
 /* MEDIA QUERIES DESKTOP */
 @media only screen and (min-width: 1200px) {
